@@ -1,0 +1,48 @@
+/* Estilos para la página web */
+body {
+    background-color: rgb(147, 136, 248);
+    color: rgb(40, 7, 63);
+
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 45px;
+    color: #e21515;
+}
+
+p {
+    font-weight: 300;
+    color: #5107db;
+}
+
+
+
+.encabezado {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 42px;
+}
+
+.parrafo {
+    text-align: justify;
+    text-transform: capitalize;
+    font-size: 24px;
+}
+
+#fondo {
+    background-color: #030202;
+}
+
+p a {
+    color: #333;
+    text-decoration: none;
+}
+.ejemplo1 {
+font-weight:800;
+}
+.ejemplo2
+{
+    text-align: left;
+}

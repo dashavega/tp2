@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>trabajo 3</h1>
+    <h2>dasha vega</h2>
+    <h3>¿Qué significa CSS?</h3>
+    <p>se usa para darle estilo y posicionarlo visualmente. .</p>
+    <h3>¿Para qué sirve el CSS?</h3>
+    <p>CSS se puede usar, por ejemplo, para cambiar la fuente, el color,
+        el tamaño y el espaciado del contenido, para formar multiples columnas, añadir animaciones y otros elementos
+        decorativos</p>
+    <h3>Qué programa se utiliza para interpretar el CSS?</h3>
+    <p> Los navegadores, como por ejemplo Firefox, Chrome o Edge (en-US), están diseñados para presentar documentos
+        visualmente
+        en una pantalla de ordenador, un proyector o una impresora.</p>
+    <h3>¿A qué se llama regla de CSS? </h3>
+    <p> cada usuario define las reglas que especifican los grupos de estilos que van a aplicarse a elementos
+        particulares o grupos
+        de elementos de la página web. Por ejemplo: «Quiero que el encabezado principal de mi página se muestre en
+        letras grandes de color rojo».
+        El código siguiente muestra una regla CSS muy simple que proporcionaría el estilo descrito en el párrafo
+        anterior:La regla se abre con un selector (en-US). </p>
+    <h3>¿Cuál es la anatomía de la regla de CSS?</h3>
+    <ol>
+        <strong>Selector:</strong> selecciona el(los) elemento(s) a dar estilo (en este caso, los elementos p ). Para
+        dar estilo a un elemento diferente, solo cambia el selector.<br>
+        <strong>Declaración:</strong> las propiedades que querés dar al elemento seleccionado en el Selector. En este
+        caso hay una sola regla, pero puede haber más.<br>
+        <strong>Propiedades:</strong> es lo que te permite dar un estilo a un elemento HTML. En el ejemplo la propiedad
+        es color que le dará color a las letras de los párrafos. Siempre las propiedades se ubicarán a la izquierda.<br>
+        <strong>Valor de la propiedad:</strong> las propiedades deben tener un valor. Cada propiedad tiene valores
+        definidos. Cada valor se ubicará a la derecha.<br>
+
+    </ol>
+    <img src="http://web.xn--ensead-zwa.com.ar/assets/static/csspartes.3d2bee5.aa01c55ea5fd8ecd1ae1116d536b4e85.png"
+        alt="anatomiacss" width="200px" />
+    <h3>¿Qué es un selector en CSS? </h3>
+    <p>un selector css es un elemento para darle estilo a un elemento diferente</p>
+    <h3> Identificar y definir los selectores: de ID, de clases, universal, de etiquetas, descendente.</h3>
+
+    <h2>ID</h2>
+    <ul>
+        <li>Este tipo de selector es igual al de clase, aunque lo aplicaremos a un único elemento HTML de nuestra página
+        </li>
+        <li>ID #</li><br>
+    </ul>
+
+    <h2>clases</h2>
+    <ul>
+        <li>Los selectores de <strong>clases</strong> comienzan siempre por un </li>
+        . (punto). Los clientes web (navegadores) identifican este punto y lo distinguen del resto de los selectores.
+        <li> p class="...">Texto de un párrafo p </li>
+    </ul>
+    <h2>universal</h2>
+    <ul>
+        <li>Nos permite aplicar estilos a todos los elementos HTML de un documento y se indica mediante el *.</li>
+        <li>* {
+            color:red;
+            }</li>
+
+    </ul>
+    <h2>etiquetas</h2>
+    <ul>
+        <li>una etiqueta. La misma se identifica sin utilizar <>Podemos, seleccionar varias etiquetas al mismo tiempo
+                concatenándolas con el signo , (coma). </li>
+        <li>p {
+            color:red;
+            }</li>
+    </ul>
+    <h2>descendente</h2>
+    <ul>
+        <li>Con este selector seleccionamos un elemento que está dentro de otro del mismo tipo. Estos seectores siempre
+            están formados por dos o más selectores separados entre si. El último selector será el elemento HTML al que
+            se le aplicará las propiedades de CSS.
+
+            Por ejemplo:</li>
+        <li>p span {
+            color:green;
+            }
+
+        </li>
+    </ul>
+    <h3>utilizando una lista ordenada: ¿cómo funciona el CSS? </h3>
+    <ol>
+        Cuando un navegador muestra un documento, ha de combinar el contenido con la información de estilo del
+        documento. Procesa el documento en una serie de etapas, que enumeraremos a continuación. Ten en cuenta que este
+        es un modelo muy simplificado de lo que
+        sucede cuando un navegador carga una página web y que cada navegador gestiona el proceso de manera diferente.
+        Pero esto es más o menos lo que sucede<br>
+
+
+        <li>El navegador carga el HTML (por ejemplo, lo recibe de la red).</li><br>
+        <li>Convierte el HTML en un DOM (Modelo de objetos del documento). El DOM representa el documento en la memoria
+            del ordenador. Lo explicaremos más detalladamente en la sección siguiente.</li><br>
+        <li> Entonces, el navegador va a buscar la mayor parte de los recursos vinculados al documento HTML, como las
+            imágenes y los videos incrustados... ¡y también el CSS vinculado! JavaScript aparece un poco más adelante en
+            el proceso, pero no vamos a hablar de ello aún para evitar complicar las cosas.</li><br>
+        <li>El navegador analiza el CSS y ordena en diferentes «cubos» las diferentes reglas según el tipo de selector.
+            Por ejemplo, elemento, clase, ID, y así sucesivamente. Para cada tipo de selector que encuentre, calcula qué
+            reglas deben aplicarse y a qué nodos en el DOM se les aplica el estilo según corresponda (este paso
+            intermedio se llama árbol de renderización).</li><br>
+        <li>El árbol de renderización presenta la estructura en que los nodos deben aparecer después de aplicarle las
+            reglas.
+        <li> la pantalla se muestra el aspecto visual de la página (esta etapa se llama pintura).</li>
+    </ol>
+    <h3>Cuáles son las tres formas para vincular CSS con HTML? </h3>
+    <ul>
+        <li>Utilizando la etiqueta style<br>
+            En nuestro HTML y dentro de la etiqueta head utilizaremos la etiqueta style es decir que los CSS se aplican
+            al MISMO docuemnto html
+        </li>
+        <li>atributo style<br>
+            En nuestro HTML aplicaremos estilos directamente a la etiqueta. Recordemos que los atributos con
+            características de un etiqueta. Veamos un ejemplos utilizando el atributo style:</li>
+        <li>archivo externo<br>
+            Esta opción es la que nos permite vincular un archivo HTML con un archivo CSS. Los archivos CSS tienen
+            extensión .css. Suelen llamarse estilos.css, style.css o también podés darle el nombre que prefieras para tu
+            proyecto.</li>
+    </ul>
+    http://www.csszengarden.com/218/
+    http://www.csszengarden.com/219/
+    <h3>
+        ¿son iguales? <br>
+        ¿Qué es lo distinto? <br>
+        ¿Qué contribuye al cambio de diseño?
+    </h3>
+    <ol>
+        <li>si son iguales</li><br>
+        <li>cambia el ccs que hace que la imagen sea distinta</li><br>
+        <li>el diseño de la css es lo que contribuye al cambio</li>
+
+    </ol>
+    <h3> los dos archivos CSS de los diseños seleccionados. ¿Son los mismos? </h3>
+    <p> los archivos css no son los mismos </p>
+
+    <h3>En líneas generales, el mismo HTML ¿puede tener diferentes diseños?</h3>
+    <p>si puedetener diferentes diseños cambiando la css</p>
+
+    <h3><strong>posibles valores</strong></h3>
+    <ol>
+        <li>named-color */<br>
+            <br>
+            hex-color */<br>
+            <br>
+            rgb() */<br>
+            <br>
+        </li>
+        <li> teal;<br>
+            (153, 102, 153);<br>
+            #777799;
+        </li>
+        <li>font: 12px Verdana, sans-serif;<br>
+            font-size-adjust: 0.58
+        </li>
+        <li>lighter;<br>
+            inherit;<br> </li>
+        <li>normal;<br>
+            italic;<br>
+            oblique;</li>
+        <li> initial <br>
+            inherit <br>
+            serif</li>
+        <li>tart;<br>
+            end;<br>
+            left;</li>
+        <li>currentcolor<br>
+            solid<br>
+            none</li>
+        <li>capitalize<br>
+            uppercase<br>
+            lowercase<br>
+        </li>
+        <li>normal;<br>
+            .2rem; <br>
+            1px;<br>
+            -1px;
+        </li>
+        <li>normal;<br>
+            2.5;<br>
+            3em;<br>
+        </li>
+    </ol>
+    
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
